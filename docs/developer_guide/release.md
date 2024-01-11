@@ -64,3 +64,4 @@ general pattern of previous release notes, with sections:
 - Deprecations/removals, if any.
 - Auto-generated PR and contributions sections.
  - Release notes should also include any necessary information about the failing actions and their resolution process.
+- Include the full GitHub commit log between releases.
