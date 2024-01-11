@@ -55,11 +55,10 @@ pip install --editable .[dev,all_extras]
 
 ## Step 3 - Install pre-commit
 
-The `aeon` repository uses [pre-commit](https://pre-commit.com/) to run a series of
-checks on the codebase before committing changes. To install pre-commit, run:
+To enforce code checks in the `aeon` repository, use [pre-commit](https://pre-commit.com/). Install pre-commit by running:
 
 ```{code-block} powershell
-pre-commit install
+pip install pre-commit
 ```
 
 This will run various code-quality hooks on the codebase before committing changes,
