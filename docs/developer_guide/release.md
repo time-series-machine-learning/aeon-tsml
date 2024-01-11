@@ -34,12 +34,18 @@ The release process is as follows, on high-level:
   notes in the changelog, following the pattern of current GitHub release notes. The
   full GitHub commit log between releases can also be included.
 
-## ``pypi`` release and release validation
+6. __Validate the installation of ``aeon`` in a new Python environment.__
+
+  To validate the installation of ``aeon`` in a new Python environment, follow these instructions:
+  
+  - Create a new Python environment
+  - Install the ``aeon`` package using ``pip``
+  - Import the package in a Python script and verify its functionality.
 Creation of the GitHub release triggers the `pypi` release workflow.
 
 6. __Validate the installation of ``aeon`` in a new Python environment.__
 
-  To validate the installation, follow these instructions:
+  To validate the installation of ``aeon`` in a new Python environment, follow these instructions:
   
   - Create a new Python environment
   - Install the ``aeon`` package using ``pip``
