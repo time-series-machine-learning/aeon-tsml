@@ -36,9 +36,18 @@ The release process is as follows, on high-level:
   full GitHub commit log between releases can also be included.
 
 ## ``pypi`` release and release validation
-Creation of the GitHub release trigger the `pypi` release workflow.
+Creation of the GitHub release triggers the `pypi` release workflow.
+
+6. __Validate the installation of ``aeon`` in a new Python environment.__
+
+  To validate the installation, follow these instructions:
+  
+  - Create a new Python environment
+  - Install the ``aeon`` package using ``pip``
+  - Import the package in a Python script and verify its functionality.
 
 5. __Wait for the ``pypi`` release CI/CD to finish.__
+  Check the ``aeon`` version on ``pypi`` after the release workflow has passed.
   If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely, something went wrong in the above steps, investigate, fix, and repeat.
 
         # Add a step to wait for the "pypi" release CI/CD to finish.
@@ -52,7 +61,12 @@ Creation of the GitHub release trigger the `pypi` release workflow.
   If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely,
   something went wrong in the above steps, investigate, fix, and repeat.
 
-6. __Release workflow completion tasks.__
+7. __Actions if installation fails or wheels have not been uploaded__
+
+  If the installation of ``aeon`` fails or wheels have not been uploaded, perform the following actions:
+  
+  - Diagnose the issue and identify the reason for the failure
+  - If the issue is related to wheel uploads, ensure that the wheels are correctly uploaded before proceeding with further installations.
   Once the release workflow has passed, check `aeon` version on `pypi`, this should be
   the new version. A validatory installation of `aeon` in a new Python environment
   should be carried out according to the installation instructions. If the installation
