@@ -36,8 +36,10 @@ The release process is as follows, on high-level:
   full GitHub commit log between releases can also be included.
 
 ## ``pypi`` release and release validation
-
 Creation of the GitHub release trigger the `pypi` release workflow.
+
+5. __Wait for the ``pypi`` release CI/CD to finish.__
+  If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely, something went wrong in the above steps, investigate, fix, and repeat.
 
 5. __Wait for the ``pypi`` release CI/CD to finish.__
   If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely,
@@ -60,4 +62,5 @@ general pattern of previous release notes, with sections:
 - Highlights
 - Dependency changes, if any
 - Deprecations/removals, if any.
-- Auto generated PR and contributions sections.
+- Auto-generated PR and contributions sections.
+ - Release notes should also include any necessary information about the failing actions and their resolution process.
