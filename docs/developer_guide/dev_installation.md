@@ -8,11 +8,11 @@ the package.
 Prior to these steps, we highly recommend creating a [virtual environment](../installation.md#using-a-pip-venv)
 for the installation.
 
-## Step 1 - Clone the repository
+## Step 1 - Clone the repository and Fixing failing actions
 
 The `aeon` repository should be cloned to a local directory using [Git](https://git-scm.com/).
 
-Using the `git` command line, the following commands will clone the `main` branch of the
+Using the `git` command line, the following commands will clone the `main` branch of the and troubleshoot any possible issues.
 repository to a local directory:
 
 ```{code-block} powershell
