@@ -21,7 +21,7 @@ The release process is as follows, on high-level:
   Create a branch from main and PR named after the release version. This should make
   changes to the version numbers and complete release notes in the changelog webpage.
 
-3. __Merge the "release" pull request.__ This PR should be reviewed by the core developers before merging.
+3. __Merge the "release" pull request.__ This PR should be reviewed by the core developers before merging. This PR should ideally be the final PR made before the release with the exception of any necessary troubleshooting PRs. The PR and release notes should optimally be reviewed by the core developers, then merged once tests pass. This PR should be reviewed by the core developers before merging.
   This PR should ideally be the final PR made before the release with the exception of
   any necessary troubleshooting PRs. The PR and release notes should optimally be
   reviewed by the core developers, then merged once tests pass.
