@@ -97,7 +97,7 @@ High quality PNG, JPG and EPS logos are available are located in the
 [docs/images/logo/](https://github.com/aeon-toolkit/aeon/tree/main/docs/images/logo/)
 directory on GitHub.
 
-The logo was designed by [Reni Rahayu](https://www.instagram.com/kojodesignandco/) via
+The logo was designed by [Reni Rahayu](https://www.instagram.com/strlreni/) via
 [crowdspring](https://www.crowdspring.com/).
 
 ## Funding
