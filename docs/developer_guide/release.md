@@ -77,8 +77,14 @@ Creation of the GitHub release triggers the `pypi` release workflow.
 
 Release notes can be generated using the `build_tools/changelog.py` script, and should
 be placed at the top of the relevant [MINOR] versions webpage. e.g.,
-`docs/chanelogs/v0.10.md` for version 0.10.0. Generally, release notes should follow the
-general pattern of previous release notes, with sections:
+`docs/release_notes/v0.10.md` for version 0.10.0. Generally, release notes should follow the
+pattern of previous release notes, with the following sections:
+
+- Highlights
+- Dependency changes, if any
+- Deprecations/removals, if any.
+- Auto-generated PR and contributions sections.
+- Include the full GitHub commit log between releases
 
 - Highlights
 - Dependency changes, if any
