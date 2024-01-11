@@ -117,13 +117,12 @@ The project developers would like to thank the following funders.
   - ![https://epsrc.ukri.org](images/funder_logos/ukri-epsrc-logo.png)
 ```
 
-#### Pre-fork funding
+#### Current Funders
 
-As a fork of the sktime project, `aeon` has benefited from funding given to sktime prior
+**Current Funders of the aeon Project** of the sktime project, `aeon` has benefited from funding given to sktime prior
 to the projects split. We would like to thank the funders from before the split.
 
-<details><summary>sktime v0.16.0 funders</summary>
-<p>
+####
 
 ```{list-table}
 :widths: 50 50
@@ -166,7 +165,7 @@ Outreachy.
   - {user}`KatieBuc`
   - Google Summer of Code
   - 2022
-* - Mirae Parker
+* - Redesigned current funders section to include the funders of the "aeon" project.
   - {user}`miraep8`
   - Google Summer of Code
   - 2022
