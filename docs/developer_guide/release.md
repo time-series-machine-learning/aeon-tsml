@@ -19,8 +19,7 @@ The release process is as follows, on high-level:
 
 2. __Create a "release" pull request.__
   Create a branch from main and PR named after the release version. This should make
-  changes to the version numbers (root `__init__.py`, `README.md` and `pyproject.toml`)
-  and have complete release notes in the changelog webpage.
+  changes to the version numbers and complete release notes in the changelog webpage.
 
 3. __Merge the "release" pull request.__
   This PR should ideally be the final PR made before the release with the exception of
