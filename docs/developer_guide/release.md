@@ -41,6 +41,13 @@ Creation of the GitHub release trigger the `pypi` release workflow.
 5. __Wait for the ``pypi`` release CI/CD to finish.__
   If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely, something went wrong in the above steps, investigate, fix, and repeat.
 
+        # Add a step to wait for the "pypi" release CI/CD to finish.
+        `pypi` release and release validation
+
+        5. __Wait for the ``pypi`` release CI/CD to finish.__
+        If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely,
+  If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely, something went wrong in the above steps, investigate, fix, and repeat.
+
 5. __Wait for the ``pypi`` release CI/CD to finish.__
   If tests fail due to sporadic unrelated failure, restart. If tests fail genuinely,
   something went wrong in the above steps, investigate, fix, and repeat.
