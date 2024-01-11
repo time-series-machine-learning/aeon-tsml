@@ -89,9 +89,7 @@ point prior to the split of the project.
 
 ## History
 
-`aeon` was started in January 2023 as a fork of the
-[sktime project](https://pypi.org/project/sktime/0.16.0/) by 8 core developers using
-v0.16.0 as a base.
+`aeon` was started as a fork by 8 core developers.
 
 ## Artwork
 
