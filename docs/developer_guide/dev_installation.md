@@ -12,8 +12,8 @@ for the installation.
 
 The `aeon` repository should be cloned to a local directory using [Git](https://git-scm.com/).
 
-Using the `git` command line, the following commands will clone the `main` branch of the and troubleshoot any possible issues.
-repository to a local directory:
+Using the `git` command line, the following commands will clone the `main` branch of the repository to a local directory and troubleshoot any possible issues.
+repository to a local directory using the specified git clone command:
 
 ```{code-block} powershell
 git clone https://github.com/aeon-toolkit/aeon.git
