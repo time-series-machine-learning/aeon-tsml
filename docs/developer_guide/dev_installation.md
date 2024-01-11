@@ -23,7 +23,7 @@ cd aeon
 If you plan to make a pull request on the GitHub repository, you should first [fork](https://github.com/aeon-toolkit/aeon/fork)
 the repository and clone your fork instead of the main repository.
 
-## Step 2 - Building `aeon` from source
+## Step 2 - Building `aeon` from source in the root directory
 
 To build and install ``aeon`` from source, navigate to the local clone's root directory
 and type:
