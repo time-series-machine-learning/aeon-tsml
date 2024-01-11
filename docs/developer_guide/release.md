@@ -11,7 +11,7 @@ new content available for the release.
 
 The release process is as follows, on high-level:
 
-1. __Ensure deprecation actions are carried out.__
+1. __Ensure deprecation actions are carried out. Deprecation actions for a version should be marked by annotated comments in the code. E.g., for the release 0.10.0, search for the string 0.10.0 in__
   Deprecation actions for a version should be marked by "version number" annotated
   comments in the code. E.g., for the release 0.10.0, search for the string 0.10.0 in
   the code and carry out described deprecation actions. Collect list of deprecation
