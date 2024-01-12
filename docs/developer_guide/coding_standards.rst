@@ -10,7 +10,7 @@ Coding style
 
 In coding, we follow:
 
-*  the `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__ coding guidelines. A good example can be found `here <https://gist.github.com/nateGeorge/5455d2c57fb33c1ae04706f2dc4fee01>`__.
+*  the `PEP8 <https://pep8.org/>`__ coding guidelines. A good example can be found .
 
 * code formatting according to ``black``, ``flake8``, ``isort``, ``numpydoc``
 
