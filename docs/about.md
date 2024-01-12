@@ -115,8 +115,8 @@ The project developers would like to thank the following funders.
 
 * -
   -
-* - The [UKRI Engineering and Physical Sciences Research Council (EPSRC)](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030756/1) funds Matthew Middlehurst ({user}`matthewmiddlehurst`) and Tony Bagnall ({user}`TonyBagnall`) since 2022
-  - ![https://epsrc.ukri.org](images/funder_logos/ukri-epsrc-logo.png)
+* - The [UKRI Engineering and Physical Sciences Research Council (EPSRC)](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/W030756/1) * funds John Doe (johndoe) and Jane Smith (janesmith) since 2023
+  - ![https://updated_funder_logo.com](images/funder_logos/updated_funder_logo.png)
 ```
 
 #### Pre-fork funding
