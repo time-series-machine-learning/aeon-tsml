@@ -60,4 +60,10 @@ general pattern of previous release notes, with sections:
 - Highlights
 - Dependency changes, if any
 - Deprecations/removals, if any.
-- Auto generated PR and contributions sections.
+- - - - Auto generated PR and contributions sections.
+
+  [Link to the commit log](commit_log_link)
+
+  [Link to the commit log](commit_log_link)
+
+  [Link to the commit log](commit_log_link)
