@@ -10,7 +10,7 @@ Coding style
 
 In coding, we follow:
 
-*  the `PEP8 <https://pep8.org/>`__ coding guidelines. A good example can be found .
+*  the `PEP8 <https://pep8.org/>`__ and `aeon` specific coding guidelines. A good example can be found in .
 
 * code formatting according to ``black``, ``flake8``, ``isort``, ``numpydoc``
 
@@ -29,24 +29,21 @@ We adhere to the following code formatting standards:
 
 This is enforced through our CI/CD workflows via `pre-commit <https://pre-commit.com/>`_.
 
-The full pre-commit configuration can be found in
-`.pre-commit-config.yaml <https://github.com/aeon-toolkit/aeon/blob/main/.pre-commit-config.yaml>`_.
-Additional configurations can be found in
-`setup.cfg <https://github.com/aeon-toolkit/aeon/blob/main/setup.cfg>`_.
+
 
 ``aeon`` specific code formatting conventions
 -----------------------------------------------
 
--  Check out our :ref:`glossary`.
+-  For naming conventions, use underscores to separate words in non-class names, e.g., ``n_instances`` rather than ``ninstances``. Exceptionally, capital letters like ``X``, ``Y``, ``Z``, are permissible as variable names or part of variable names, such as ``X_train``, if referring to data sets. Avoid multiple statements on one line and use absolute imports for references inside aeon.
 -  Use underscores to separate words in non-class names: ``n_instances``
    rather than ``ninstances``.
 -  exceptionally, capital letters ``X``, ``Y``, ``Z``, are permissible as variable names
    or part of variable names such as ``X_train`` if referring to data sets, in accordance
    with the PEP8 convention that such variable names are permissible if in prior use in an area
-   (here, this is the ``scikit-learn`` adjacenet ecosystem)
--  Avoid multiple statements on one line. Prefer a line return after a
-   control flow statement (``if``/``for``).
--  Use absolute imports for references inside aeon.
+   Remove outdated or irrelevant information.
+-  
+   
+-  
 -  Don’t use ``import *`` in the source code. It is considered
    harmful by the official Python recommendations. It makes the code
    harder to read as the origin of symbols is no longer explicitly
