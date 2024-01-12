@@ -19,13 +19,13 @@ Code formatting and linting
 
 We adhere to the following code formatting standards:
 
-* `black <https://black.readthedocs.io/en/stable/>`__ with default settings
+* `black <https://black.readthedocs.io/en/stable/>`__ with default settings and a line length of 88 characters
 
-* `flake8 <https://flake8.pycqa.org/en/latest/>`__ with a ``max_line_length=88`` and some exceptions as per ``setup.cfg``
+* `flake8 <https://flake8.pycqa.org/en/latest/>`__ with default settings
 
-* ``isort`` with default settings
+* ``isort`` with default settings and a line length of 88 characters
 
-* ``numpydoc`` to enforce numpy `docstring standard <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard>`_ , along with aeon specific conventions described in our :ref:`developer_guide`'s :ref:`documentation section <developer_guide_documentation>`.
+* ``numpydoc`` to enforce numpy `docstring standard <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard>`_
 
 This is enforced through our CI/CD workflows via `pre-commit <https://pre-commit.com/>`_.
 
@@ -61,7 +61,7 @@ There are two options to set up local code quality checks:
 * using ``pre-commit`` for automated code formatting
 * setting up ``black``, ``flake8``, ``isort`` and/or ``numpydoc`` manually in a local dev IDE
 
-Using pre-commit
+Using pre-commit for automated code formatting to enforce code formatting and linting standards
 ^^^^^^^^^^^^^^^^
 
 To set up pre-commit, follow these steps in a python environment
@@ -92,7 +92,7 @@ Additional configurations can be found in
 .. note::
    If you want to exclude some line of code from being checked, you can add a ``# noqa`` (no quality assurance) comment at the end of that line.
 
-Integrating with your local developer IDE
+Integrating code formatting and linting standards with your local developer IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Local developer IDEs will usually integrate with common code quality checks, but need setting them up in IDE specific ways.
@@ -105,7 +105,7 @@ Visual Studio Code preferences also allow setting of parameters such as ``max_li
 
 In Visual Studio Code, we also recommend to add ``"editor.ruler": 88`` to your local ``settings.json`` to display the max line length.
 
-API design
+API design: Feedback is welcome
 ============
 
 The general design approach of aeon is described in the
