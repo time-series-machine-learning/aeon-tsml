@@ -27,13 +27,17 @@ The release process is as follows, on high-level:
   any necessary troubleshooting PRs. The PR and release notes should optimally be
   reviewed by the core developers, then merged once tests pass.
 
-4. __Create the GitHub release.__
-  This release should create a new tag following the syntax v[MAJOR].[MINOR].[PATCH],
-  e.g., the string `v0.10.0` for version 0.10.0. The release name should similarly be
-  `aeon v0.10.0`.  The GitHub release notes should contain only "hightlights",
-  "new contributors" and "all contributors" sections, and otherwise link to the release
-  notes in the changelog, following the pattern of current GitHub release notes. The
-  full GitHub commit log between releases can also be included.
+4. __Create the GitHub release by following the steps below.__
+  This release should create a new tag and a release on GitHub following the steps below:
+1. Go to the repository's Releases tab on GitHub and click on 'Draft a new release'.
+2. Enter the tag following the syntax v[MAJOR].[MINOR].[PATCH], e.g., v0.10.0 for version 0.10.0.
+3. Set the release name as `aeon v0.10.0`.
+4. In the GitHub release notes, include the following sections:
+   - Highlights
+   - New contributors
+   - All contributors
+5. Link to the release notes in the changelog using a reference link.
+6. Include the full GitHub commit log between releases in the release notes.
 
 ## ``pypi`` release and release validation
 
