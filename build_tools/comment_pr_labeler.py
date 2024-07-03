@@ -17,9 +17,9 @@ comment_body = context_dict["event"]["comment"]["body"]
 comment_user = context_dict["event"]["comment"]["user"]["login"]
 labels = [label.name for label in issue.get_labels()]
 
-if comment_user != "aeon-actions-bot[bot]" or issue.pull_request is None:
-    print("::set-output name=empty_commit::false")  # noqa: T201
-    sys.exit(0)
+# if comment_user != "aeon-actions-bot[bot]" or issue.pull_request is None:
+#     print("::set-output name=empty_commit::false")  # noqa: T201
+#     sys.exit(0)
 pr = issue.as_pull_request()
 
 
@@ -48,6 +48,15 @@ for option in label_options:
     check_label_option(option[0], option[1])
 
 if "- [x] Push an empty commit to re-run CI checks" in comment_body:
+    for comment in pr.get_comments():
+        if comment.user.login == comment_user and comment_body in comment.body:
+            comment.edit(
+                comment_body.replace(
+                    "- [x] Push an empty commit to re-run CI checks",
+                    "- [ ] Push an empty commit to re-run CI checks",
+                )
+            )
+            break
     print("::set-output name=empty_commit::true")  # noqa: T201
 else:
     print("::set-output name=empty_commit::false")  # noqa: T201
