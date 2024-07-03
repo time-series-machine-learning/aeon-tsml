@@ -17,7 +17,7 @@ jobs:
 #          app-id: ${{ vars.PR_APP_ID }}
 #          private-key: ${{ secrets.PR_APP_KEY }}
 
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
           sparse-checkout: build_tools
@@ -36,6 +36,14 @@ jobs:
         env:
           CONTEXT_GITHUB: ${{ toJson(github) }}
 #          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+
+      - if: ${{ steps.assign.outputs.empty_commit }}
+        name: Checkout head
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+#          token: ${{ steps.app-token.outputs.token }}
 
       - if: ${{ steps.assign.outputs.empty_commit }}
         name: Push empty commit
