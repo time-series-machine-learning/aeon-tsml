@@ -17,10 +17,14 @@ comment_body = context_dict["event"]["comment"]["body"]
 comment_user = context_dict["event"]["comment"]["user"]["login"]
 labels = [label.name for label in issue.get_labels()]
 
-# if issue.pull_request is None or comment_user != "aeon-actions-bot[bot]" or "## Thank you for contributing to `aeon`" not in comment.body:
-#     with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-#         print(f"empty_commit=false", file=fh)  # noqa: T201
-#     sys.exit(0)
+if (
+    issue.pull_request is None
+    or comment_user != "aeon-actions-bot[bot]"
+    or "## Thank you for contributing to `aeon`" not in comment_body
+):
+    with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+        print("empty_commit=false", file=fh)  # noqa: T201
+    sys.exit(0)
 pr = issue.as_pull_request()
 
 
@@ -62,7 +66,7 @@ if "- [x] Push an empty commit to re-run CI checks" in comment_body:
             )
             break
     with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
-        print(f"empty_commit=true", file=fh)  # noqa: T201
+        print("empty_commit=true", file=fh)  # noqa: T201
 else:
     with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
-        print(f"empty_commit=false", file=fh)  # noqa: T201
+        print("empty_commit=false", file=fh)  # noqa: T201
