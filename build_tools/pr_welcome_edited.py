@@ -1,4 +1,4 @@
-"""Labels PRs based on bot comment checkboxes."""
+"""Labels PRs and process based on bot comment checkboxes."""
 
 import json
 import os
@@ -51,6 +51,12 @@ label_options = [
 
 for option in label_options:
     check_label_option(option[0], option[1])
+
+repo_name = pr.head.repo.full_name
+branch_name = pr.head.ref
+with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+    print(f"repo={repo_name}", file=fh)  # noqa: T201
+    print(f"branch={branch_name}", file=fh)  # noqa: T201
 
 if "- [x] Push an empty commit to re-run CI checks" in comment_body:
     for comment in pr.get_comments():
